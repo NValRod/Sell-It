@@ -1,0 +1,155 @@
+/* Generals */
+:root{
+    --blue:#bad7f2;
+    --yellow:#f2e2ba;
+    --red:#f2bac9;
+    --green:#b0f2b4;
+    --SfGreen:#baf2e9;
+    --fontPrincipal:'Nunito', sans-serif;;
+}
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body{
+    background-color: #f3fcf0 !important;
+    font-family: var(--fontPrincipal);
+}
+
+a{
+    text-decoration: none;
+    color: black !important;
+    width: 2em;
+}
+
+input, textarea,select{
+    outline: none;
+    font-family: var(--fontPrincipal);
+    border-radius: 5px;
+    border: 1.5px solid black;
+    
+}
+
+select{
+    width: 15%;
+}
+
+input[type="file" i]{
+    border: none;
+}
+
+.notice{
+    color: green;
+}
+.alert{
+    color: red;
+}
+
+.btnGn{
+    border: 1px solid black;
+    border-radius: 7px;
+    padding: 9px;
+    cursor: pointer;
+    margin-top: 1em;
+    margin-bottom:1em;
+    text-align: center;
+    font-size: .9em;
+}
+
+/* products */
+.price{
+    margin-top: -.8em;
+    font-size: 1.1em;
+    border-bottom: 1px solid black;
+}
+.description{
+    font-size: 1em;
+}
+
+.cntGn{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 1em;
+    margin-top: -2em;
+
+}
+.cntProd{
+    background-color: var(--blue);
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 10px;
+    width: 18em;
+    height: 20em;
+    margin-top: 3em;
+    margin-bottom:1em;
+}
+.two{
+    height: 29em;
+    margin-top: 1.5em;
+}
+.cntEdit{
+    display: flex;
+    gap: 1em;
+}
+
+.btnEdit{
+    background-color: var(--yellow);
+}
+.btnDelete{
+    background-color: var(--red);
+}
+
+.imgProd{
+    width: 16em;
+    height: 12em;
+    display: flex;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.prcRange{
+    margin: 2em 0;
+    margin-bottom: -2em;
+}
+
+   /* Partial */
+
+   .btnAdd{
+        background-color: var(--SfGreen);
+        width: 20.4%;
+   }
+   .btnCreate{
+        background-color: var(--green);
+        width: 10%;
+    }
+    
+    .cntForm{
+        display: flex;
+        flex-direction: column;
+        margin-top: .5em;
+        margin-bottom: .5em; 
+    }
+
+    .field{
+        width: 15%;
+    }
+
+    .dcpForm{
+        width: 30%;
+        height: 5em;
+    }
+
+/* Categories */
+
+.cateName, .category{
+    margin: 1.5em 0;
+    margin-right: .5em;
+    border: 1px solid black;
+    padding: .5em;
+    width: 10em;
+    border-radius: 5px;
+}

@@ -1,0 +1,16 @@
+<%= form_with(model: category) do |form| %>
+    <% @category.errors.full_messages.each do |error| %>
+        <div class="alert">
+        <%= error %>
+        </div>
+    <% end %>
+
+  <div class="cntForm">
+    <%= form.label :name %>
+    <%= form.text_field :name, class:'field' %>
+  </div>
+
+  <div class="cntForm">
+    <%= form.submit class:'btnGn btnCreate' %>
+  </div>
+<% end %>

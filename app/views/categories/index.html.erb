@@ -1,0 +1,6 @@
+<h2 class="title"><%= t('.title') %></h1>
+
+<%= render partial: 'category', collection: @categories %>
+<div style="margin-top:2em"> 
+<%= link_to t('.new'), new_category_path, class:"btnGn btnCreate" %>
+</div>

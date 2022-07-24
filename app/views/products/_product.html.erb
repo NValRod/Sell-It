@@ -1,0 +1,11 @@
+  <div class="cntProd"> 
+      <%= link_to product_path(product), class: 'product' do %>
+        <h2><%= product.title %></h2>
+      <% end %>
+      <p class="price" ><%= product.price %>$</p>
+      <div> 
+        <%= link_to product_path(product) do %>
+        <%= image_tag product.photo, class:"imgProd" if product.photo.attached? %>
+        <% end %>
+    </div>
+  </div>
